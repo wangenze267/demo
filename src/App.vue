@@ -4,6 +4,7 @@
     <HelloWorld msg="Welcome to Your Vue.js App"/>
     <div>11111233456677</div>
     <el-button type="primary">Button</el-button>
+    <el-button type="primary">绷不住啦</el-button>
   </div>
 </template>
 
