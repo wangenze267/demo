@@ -9,12 +9,21 @@
 </template>
 
 <script>
+import Monitor from 'website-monitoring'
 import HelloWorld from './components/HelloWorld.vue'
 
 export default {
   name: 'App',
   components: {
     HelloWorld
+  },
+  mounted() {
+    Monitor.resource.init((data) => {
+      console.log(data)
+    })
+    Monitor.perf.init((data) => {
+      console.log(data)
+    })
   }
 }
 </script>
